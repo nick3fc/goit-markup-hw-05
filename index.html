@@ -394,15 +394,15 @@
       <div class="footer-right">
         <p class="footer-right-header">Subscribe</p>
         <label for="subscribe-email"></label>
-        <div class="subscribe-set">
-          <input class="subscribe-email" name="subscribe-email" id="subscribe-email" placeholder="E-mail">
+        <form class="subscribe-set">
+          <input class="subscribe-email" type="email" name="subscribe-email" id="subscribe-email" placeholder="E-mail">
           <button class="subscribe-btn" type="submit">
             Subscribe
-            <svg class="subscribe-icon" width="32" height="32">
+            <svg class="subscribe-icon" width="24" height="24">
               <use href="./images/icons.svg#telegram"></use>
             </svg>
           </button>
-        </div>
+        </form>
 
       </div>
     </div>
@@ -410,7 +410,7 @@
 
   <div class="form-overlay">
     <!-- <div class="form-overlay is-open"> -->
-    <div class="form-window">
+    <form class="form-window">
 
       <button class="close-btn">
         <svg class="close-btn-icon" width="8" height="8">
@@ -444,12 +444,13 @@
         </label>
         <label class="comment-input">
           Comment
-          <textarea type="text" name="user-comment" placeholder="Text input"></textarea>
+          <textarea name="user-comment" placeholder="Text input"></textarea>
         </label>
       </div>
 
       <div class="checkbox-set">
-        <input class="policy-checkbox visually-hidden" type="checkbox" id="policy-checkbox" required>
+        <input class="policy-checkbox visually-hidden" name="policy-checkbox" type="checkbox" id="policy-checkbox"
+          required>
         <label class="policy-checkbox-label" for="policy-checkbox">
           <span class="custom-checkbox">
             <svg class="custom-checkbox-icon" width="10" height="8" viewBox="0 0 10 8">
@@ -457,15 +458,16 @@
             </svg>
           </span>
           I accept the terms and conditions of the
-          <a class="policy-checkbox-link">Privacy
+          <a class="policy-checkbox-link" href="#">Privacy
             Policy
           </a>
+        </label>
       </div>
 
 
-      </label>
+
       <button class="send-btn" type="submit">Send</button>
-    </div>
+    </form>
   </div>
 
 </body>
