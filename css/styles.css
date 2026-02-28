@@ -420,7 +420,7 @@ img {
   background-color: #2e2f42;
 }
 .footer-block {
-  justify-content: space-between;
+  /* justify-content: space-between; */
   display: flex;
   /* gap: 120px; */
   align-items: baseline;
@@ -431,6 +431,11 @@ img {
   flex-direction: column;
   gap: 16px;
 }
+.footer-center {
+  margin-left: 120px;
+  margin-right: 80px;
+}
+
 .footer-center-header,
 .footer-right-header {
   font-weight: 500;
