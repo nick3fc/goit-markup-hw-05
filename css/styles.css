@@ -226,7 +226,8 @@ img {
 }
 .hero-btn:hover,
 .hero-btn:focus,
-/* .send-btn:hover, */
+.send-btn:hover,
+.send-btn:focus,
 .send-btn:active {
   background-color: #404bbf;
   cursor: pointer;
@@ -510,6 +511,7 @@ img {
 }
 .subscribe-email:hover,
 .subscribe-email:focus {
+  outline: none;
   border-color: #31d0aa; 
 }
 
@@ -626,7 +628,7 @@ background-color:#31d0aa;
 .form-window label {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+   line-height: 1.33333;
   letter-spacing: 0.04em;
 }
 .input-set {
@@ -692,7 +694,7 @@ background-color:#31d0aa;
   fill: #4d5ae5; /* IRIS  */
 }
 .checkbox-set {
-  display: inline-flex;
+    display: inline-flex;
   padding-left: 24px;
   padding-right: 24px;
   margin-bottom: 24px;
@@ -701,6 +703,8 @@ background-color:#31d0aa;
   height: 16px;
 }
 .custom-checkbox {
+  margin-right: 8px;
+
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -721,6 +725,7 @@ background-color:#31d0aa;
   fill: #f4f4fd;
   border: none;
 }
+
 .policy-checkbox-link {
   line-height: 1.33333;
   text-decoration: underline;
